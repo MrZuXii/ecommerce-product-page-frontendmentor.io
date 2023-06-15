@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: minmax(20rem, 44.5rem) minmax(20rem, 44.5rem);
   justify-content: center;
-  margin: 100px auto;
+  margin: 90px auto;
   gap: 12.5rem;
 
   @include respond(high) {

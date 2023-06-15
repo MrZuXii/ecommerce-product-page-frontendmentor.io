@@ -1,0 +1,21 @@
+.main {
+  display: grid;
+  grid-template-columns: minmax(20rem, 44.5rem) minmax(20rem, 44.5rem);
+  justify-content: center;
+  margin: 100px auto;
+  gap: 12.5rem;
+
+  @include respond(high) {
+    gap: 8vw;
+  }
+  @include respond(low) {
+    grid-template-columns: 45fr 55fr;
+    gap: 8vw;
+  }
+
+  @include respond(very-low) {
+    grid-template-columns: 1fr;
+    margin: 0;
+    gap: 0;
+  }
+}

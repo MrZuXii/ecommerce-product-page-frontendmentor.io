@@ -1,0 +1,31 @@
+.mobile-menu {
+  background: none;
+  border: none;
+  z-index: 99999;
+  cursor: pointer;
+  display: none;
+  @include respond(very-low) {
+    display: block;
+  }
+
+  svg {
+    width: 16px;
+    height: 15px;
+    display: block;
+  }
+}
+.close {
+  display: none;
+}
+.open {
+  display: block;
+}
+
+.nav-open {
+  .close {
+    display: block;
+  }
+  .open {
+    display: none;
+  }
+}

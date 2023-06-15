@@ -1,0 +1,51 @@
+.user {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+
+  @include respond(low) {
+    gap: 3vw;
+  }
+
+  &__basket {
+    position: relative;
+
+    svg {
+      height: 21.82px;
+      width: 23.8px;
+      fill: var(--color-dark-grayish-blue);
+      transition: 0.2s;
+      cursor: pointer;
+      display: block;
+
+      &:hover {
+        fill: black;
+      }
+    }
+  }
+
+  &__avatar {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      outline: 2px solid var(--color-orange);
+    }
+  }
+  &__num {
+    position: absolute;
+    width: 19px;
+    height: 13px;
+    background: var(--color-orange);
+    border-radius: 6.5px;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    top: 0;
+    right: 0;
+    transform: translate(33%, -39%);
+  }
+}

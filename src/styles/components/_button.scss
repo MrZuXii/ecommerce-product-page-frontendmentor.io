@@ -1,0 +1,26 @@
+.button {
+  background-color: var(--color-orange);
+  border-radius: 5px;
+  color: var(--color-white);
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  transition: 0.2s;
+
+  &:hover {
+    background: #ffab6a;
+    box-shadow: 0px 20px 50px -20px #ff7e1b;
+  }
+  svg {
+    width: 17.64px;
+    height: 16px;
+    fill: var(--color-white);
+  }
+}
